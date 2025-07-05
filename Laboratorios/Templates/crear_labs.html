@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>crear laboratorios</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button>
+        guardar
+    </button>
+</form>
+
+{% endblock %}
