@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>laboratorios</h1>
+{% for lab in laboratorio %}
+
+<h2>nombre: {{lab.nombre}}</h2>
+<h2>direccion: {{lab.direccion}}</h2>
+
+{% endfor %}
+{% endblock %}
